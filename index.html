@@ -14,7 +14,14 @@
             margin: 50px auto;
             box-sizing: border-box;
             position: relative;
-        }
+            background-image: linear-gradient(to top right, #2bcaff 0%, #9fa0fd 50%, #e942ff 100%);
+    background-size: 150% auto;
+    transition: background-position 1s ease;
+}
+
+.box:hover{
+    background-position: right center;
+}
 
         /* 1st circle */
         .circle {
@@ -108,10 +115,10 @@
                 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);">Reset</button>
         </div>
         <!-- circles -->
-        <div class="circle" onclick="animateArrow()"></div>
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
+        <div  draggable="true" class="circle" onclick="animateArrow()"></div>
+        <div draggable="true" class="circle circle1"></div>
+        <div draggable="true" class="circle circle2"></div>
+        <div draggable="true" class="circle circle3"></div>
         <!-- arrows -->
         <div class="arrow">&#8592;</div>
         <div class="arrow1">&#8592;</div>
