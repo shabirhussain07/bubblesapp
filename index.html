@@ -8,6 +8,7 @@
         /* styling for the box */
         .box {
             border: 5px solid black;
+            box-shadow: 5px 5px 5px grey;
             padding: 20px;
             width: 900px;
             height: 550px;
@@ -22,7 +23,19 @@
 .box:hover{
     background-position: right center;
 }
+#h1{
+    text-align: center;
+    text-shadow: 1px 1px 1px grey;
+    text-decoration:underline;
+    color: rgb(237, 1, 1);
+    background-image: linear-gradient(to top right, #2bcaff 0%, #9fa0fd 50%, #e942ff 100%);
+    background-size: 150% auto;
+    transition: background-position 1s ease;
+}
 
+#h1:hover{
+    background-position: right center;
+}
         /* 1st circle */
         .circle {
             width: 90px;
@@ -97,20 +110,24 @@
 </head>
 
 <body>
-    <h1>
-        <center>Bubbles App</center>
+    <div>
+    <h1 id="h1">
+        Bubbles App
     </h1>
+</div>
     <div class="box">
         <!-- reset button -->
         <div style="text-align: center;">
             <button style="position:absolute; 
                 top: 102%; 
                 right: 50px; 
+                padding: 10px;
                 font-size: 1.4rem; 
                 background-color: #001df8; 
                 color: white; 
                 border: none; 
-                border-radius: 3px; 
+                border-radius: 30px;
+                box-shadow: 5px 5px 5px grey; 
                 cursor: pointer; 
                 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);">Reset</button>
         </div>
