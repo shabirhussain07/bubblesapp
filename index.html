@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bubbles App</title>
+
+    <style>
+        /* styling for the box */
+        .box {
+            border: 5px solid black;
+            padding: 20px;
+            width: 900px;
+            height: 550px;
+            margin: 50px auto;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* 1st circle */
+        .circle {
+            width: 90px;
+            height: 90px;
+            background-color: blue;
+            border-radius: 50%;
+            position: relative;
+            right: -50px;
+            top: 10%;
+            transform: translateY(-50%);
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        /* 2nd circle */
+        .circle1 {
+            background-color: rgb(255, 0, 0);
+            right: -50px;
+            top: 18%;
+            transform: translateY(-50%);
+        }
+
+        /* 3rd circle */
+        .circle2 {
+            background-color: rgb(0, 255, 21);
+            right: -50px;
+            top: 25%;
+            transform: translateY(-50%);
+        }
+
+        /* 4th circle */
+        .circle3 {
+            background-color: rgb(255, 255, 0);
+            right: -50px;
+            top: 33%;
+            transform: translateY(-50%);
+        }
+
+        /* arrow correspoinding to the 1st circle */
+        .arrow {
+            font-size: 4em;
+            position: absolute;
+            right: 100px;
+            top: 4%;
+        }
+
+        /* arrow correspoinding to the 2nd circle */
+        .arrow1 {
+            font-size: 4em;
+            position: absolute;
+            right: 100px;
+            top: 30%;
+        }
+
+        /* arrow correspoinding to the 3rd circle */
+
+        .arrow2 {
+            font-size: 4em;
+            position: absolute;
+            right: 100px;
+            top: 55%;
+        }
+
+        /* arrow correspoinding to the 4th circle */
+
+        .arrow3 {
+            font-size: 4em;
+            position: absolute;
+            right: 100px;
+            top: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>Bubbles App</center>
+    </h1>
+    <div class="box">
+        <!-- reset button -->
+        <div style="text-align: center;">
+            <button style="position:absolute; 
+                top: 102%; 
+                right: 50px; 
+                font-size: 1.4rem; 
+                background-color: #001df8; 
+                color: white; 
+                border: none; 
+                border-radius: 3px; 
+                cursor: pointer; 
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);">Reset</button>
+        </div>
+        <!-- circles -->
+        <div class="circle" onclick="animateArrow()"></div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <!-- arrows -->
+        <div class="arrow">&#8592;</div>
+        <div class="arrow1">&#8592;</div>
+        <div class="arrow2">&#8592;</div>
+        <div class="arrow3">&#8592;</div>
+
+    </div>
+    <!-- javascript file with animation code -->
+    <script src="bubbles.js"></script>
+
+</body>
+
+</html>
